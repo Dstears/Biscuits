@@ -1,5 +1,6 @@
-package com.mbiscuit.core;
+package com.mbiscuit.cor;
 
+import com.mbiscuit.core.CoreApplication;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
