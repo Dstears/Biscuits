@@ -39,6 +39,11 @@ public class ProgressService {
         diaryRepository.save(diary);
     }
 
+    public int countTodayDiary() {
+        LocalDate now = LocalDate.now();
+        return diaryRepository.countByCreateDate(now);
+    }
+
     /**
      * 返回当天的日记，如果当天没有则返回昨天
      *

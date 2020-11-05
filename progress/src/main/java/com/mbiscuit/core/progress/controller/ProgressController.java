@@ -32,6 +32,12 @@ public class ProgressController {
         return BasicResult.success(diary);
     }
 
+    @GetMapping("countTodayDiary")
+    public BasicResult<Integer> countTodayDiary() {
+        int count = progressService.countTodayDiary();
+        return BasicResult.success(count);
+    }
+
     @PostMapping("listDiary")
     public BasicResult<List<Diary>> listDiary(@RequestBody PageParam pageParam) {
         List<Diary> list = progressService.listDiary(pageParam);
