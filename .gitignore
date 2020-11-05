@@ -2,3 +2,4 @@
 *.iml
 web/target
 common/target
+*/target
