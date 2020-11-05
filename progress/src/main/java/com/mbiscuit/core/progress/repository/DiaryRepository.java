@@ -1,6 +1,8 @@
 package com.mbiscuit.core.progress.repository;
 
 import com.mbiscuit.core.progress.pojo.Diary;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -12,4 +14,5 @@ public interface DiaryRepository extends JpaRepository<Diary, Long> {
     int countByCreateDate(LocalDate createDate);
 
     Diary findByCreateDate(LocalDate createDate);
+
 }
