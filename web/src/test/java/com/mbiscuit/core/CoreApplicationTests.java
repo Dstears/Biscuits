@@ -1,14 +1,11 @@
-package com.mbiscuit.cor;
+package com.mbiscuit.core;
 
-import com.mbiscuit.core.CoreApplication;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest(classes = CoreApplication.class)
-class CoreApplicationTests {
+public class CoreApplicationTests {
 
     @BeforeAll
     static void beforeAll() {

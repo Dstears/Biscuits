@@ -1,4 +1,4 @@
-package com.mbiscuit.cor;
+package com.mbiscuit.core;
 
 import com.mbiscuit.core.bill.pojo.BillDetail;
 import org.junit.jupiter.api.Test;

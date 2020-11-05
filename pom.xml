@@ -6,6 +6,9 @@
     <modules>
         <module>common</module>
         <module>web</module>
+        <module>bill</module>
+        <module>oauth</module>
+        <module>progress</module>
     </modules>
 
     <parent>

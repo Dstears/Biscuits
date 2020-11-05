@@ -16,7 +16,17 @@
     <dependencies>
         <dependency>
             <groupId>com.mbiscuit</groupId>
-            <artifactId>common</artifactId>
+            <artifactId>bill</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mbiscuit</groupId>
+            <artifactId>oauth</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mbiscuit</groupId>
+            <artifactId>progress</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
