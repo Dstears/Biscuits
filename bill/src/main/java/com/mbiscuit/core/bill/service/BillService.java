@@ -11,7 +11,7 @@ public interface BillService {
 
     void calculateBill(LocalDate date);
 
-    void saveBillDetails(LocalDate date, BigDecimal repayment, List<BillDetail> billDetails, List<BillLoan> billLoans);
+    void saveBillDetails(LocalDate date, BigDecimal repayment,BigDecimal cash, List<BillDetail> billDetails, List<BillLoan> billLoans);
 
     void deleteBill(LocalDate date);
 }

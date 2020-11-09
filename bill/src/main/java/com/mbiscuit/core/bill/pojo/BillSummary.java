@@ -22,31 +22,19 @@ public class BillSummary {
     private Long id;
     private BigDecimal repayment;
     private LocalDate date;
+    private BigDecimal cash;
 
-    private BigDecimal total;
     private BigDecimal realTotal;
 
-    private BigDecimal actualDecrease;
-    private BigDecimal realActualDecrease;
 
-
-    private BigDecimal interest;
-    private BigDecimal realInterest;
-
-
-    public static BillSummary getInstance(LocalDate date, BigDecimal repayment) {
+    public static BillSummary getInstance(LocalDate date, BigDecimal repayment, BigDecimal cash) {
         BillSummary one = new BillSummary();
         one.date = date;
         one.repayment = repayment;
+        one.cash = cash;
 
         one.setRealTotal(BigDecimal.ZERO);
-        one.setTotal(BigDecimal.ZERO);
 
-        one.setActualDecrease(BigDecimal.ZERO);
-        one.setRealActualDecrease(BigDecimal.ZERO);
-
-        one.setInterest(BigDecimal.ZERO);
-        one.setRealInterest(BigDecimal.ZERO);
         return one;
     }
 }

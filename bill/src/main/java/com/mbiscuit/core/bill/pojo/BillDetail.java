@@ -48,11 +48,11 @@ public class BillDetail {
         this.total = this.amount.add(this.interest);
     }
 
-    public static BillDetail getInstance(BigDecimal amountPerStage, Integer stage, BigDecimal interestPerStage, Integer type, BankEnum bank) {
+    public static BillDetail getInstance(BigDecimal amountPerStage, Integer stage, BigDecimal interestPerStage, BillDetailTypeEnum type, BankEnum bank) {
         BillDetail one = new BillDetail();
         one.amountPerStage = amountPerStage;
         one.stage = stage;
-        one.type = type;
+        one.type = type.getType();
         BigDecimal stageDecimal = BigDecimal.valueOf(stage);
         one.amount = amountPerStage.multiply(stageDecimal);
         one.interestPerStage = interestPerStage;
@@ -63,6 +63,6 @@ public class BillDetail {
     }
 
     public static BillDetail getInstance(BigDecimal amountPerStage, BankEnum bank) {
-        return getInstance(amountPerStage, 1, BigDecimal.ZERO, BillDetailTypeEnum.MERGE.getType(), bank);
+        return getInstance(amountPerStage, 1, BigDecimal.ZERO, BillDetailTypeEnum.MERGE, bank);
     }
 }
