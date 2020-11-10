@@ -9,6 +9,8 @@ spring:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
 #    show-sql: true
+xxl:
+  admin-address: http://xxl.mbiscuit.com/xxl-job-admin
 logging:
   file:
     path: ${user.home}/mbiscuit/
