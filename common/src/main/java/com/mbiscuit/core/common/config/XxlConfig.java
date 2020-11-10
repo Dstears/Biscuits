@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class XxlConfig {
 
-    @Bean
+    @Bean(initMethod = "start", destroyMethod = "destroy")
     public XxlJobExecutor xxlJobExecutor(){
         XxlJobExecutor xxlJobExecutor = new XxlJobExecutor();
         xxlJobExecutor.setAdminAddresses("http://localhost:8082/xxl-job-admin");
