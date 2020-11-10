@@ -11,7 +11,7 @@ public class XxlConfig {
     public XxlJobExecutor xxlJobExecutor(){
         XxlJobExecutor xxlJobExecutor = new XxlJobExecutor();
         xxlJobExecutor.setAdminAddresses("http://localhost:8082/xxl-job-admin");
-        xxlJobExecutor.setAppname("mbiscuit");
+        xxlJobExecutor.setAppName("mbiscuit");
         return xxlJobExecutor;
     }
 }
