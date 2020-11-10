@@ -24,24 +24,5 @@ public class CoreApplication {
         SpringApplication.run(CoreApplication.class, args);
     }
 
-    @Bean
-    public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory factory) {
-        RedisTemplate<String, Object> template = new RedisTemplate<>();
-        template.setConnectionFactory(factory);
 
-        Jackson2JsonRedisSerializer<Object> jsonRedisSerializer = new Jackson2JsonRedisSerializer<>(Object.class);
-
-        ObjectMapper om = new ObjectMapper();
-        om.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);
-        jsonRedisSerializer.setObjectMapper(om);
-
-        template.setValueSerializer(jsonRedisSerializer);
-        template.setKeySerializer(new StringRedisSerializer());
-
-        template.setHashKeySerializer(new StringRedisSerializer());
-        template.setHashValueSerializer(jsonRedisSerializer);
-        template.afterPropertiesSet();
-        return template;
-
-    }
 }
