@@ -20,6 +20,9 @@
     <packaging>pom</packaging>
     <groupId>com.mbiscuit</groupId>
     <artifactId>core</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>prod-SNAPSHOT</version>
 
+    <properties>
+        <mbiscuit.version>0.0.1-SNAPSHOT</mbiscuit.version>
+    </properties>
 </project>

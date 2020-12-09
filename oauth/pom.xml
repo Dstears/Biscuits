@@ -5,17 +5,17 @@
     <parent>
         <artifactId>core</artifactId>
         <groupId>com.mbiscuit</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>prod-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>oauth</artifactId>
-
+    <version>${mbiscuit.version}</version>
     <dependencies>
         <dependency>
             <groupId>com.mbiscuit</groupId>
             <artifactId>common</artifactId>
-            <version>${project.version}</version>
+            <version>${mbiscuit.version}</version>
         </dependency>
     </dependencies>
 

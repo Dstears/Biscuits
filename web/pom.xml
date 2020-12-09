@@ -5,29 +5,35 @@
     <parent>
         <artifactId>core</artifactId>
         <groupId>com.mbiscuit</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>prod-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>web</artifactId>
 
+    <version>${mbiscuit.version}</version>
     <packaging>jar</packaging>
 
     <dependencies>
+                <dependency>
+                    <groupId>com.mbiscuit</groupId>
+                    <artifactId>common</artifactId>
+                    <version>${mbiscuit.version}</version>
+                </dependency>
         <dependency>
             <groupId>com.mbiscuit</groupId>
             <artifactId>bill</artifactId>
-            <version>${project.version}</version>
+            <version>${mbiscuit.version}</version>
         </dependency>
         <dependency>
             <groupId>com.mbiscuit</groupId>
             <artifactId>oauth</artifactId>
-            <version>${project.version}</version>
+            <version>${mbiscuit.version}</version>
         </dependency>
         <dependency>
             <groupId>com.mbiscuit</groupId>
             <artifactId>progress</artifactId>
-            <version>${project.version}</version>
+            <version>${mbiscuit.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
